@@ -35,7 +35,7 @@ public class OperatorWorker extends Thread implements OperatorAction {
                     client.notify();
                 }
 
-            } else Timeout.sleep(150);
+            } else Timeout.sleep(300);
 
         }
     }

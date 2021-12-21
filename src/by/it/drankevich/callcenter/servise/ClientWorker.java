@@ -33,7 +33,7 @@ public class ClientWorker extends Thread implements ClientAction {
        if (callCenter.getQueue().getQueue().size() > 1) {
             if (RandomMaker.random()) {
                 System.out.println(client+" Calling later");
-               Timeout.sleep(100);
+               Timeout.sleep(400);
                 if (callCenter.getWorkingDayPlan().isOpened()) {
                     return;
                 }

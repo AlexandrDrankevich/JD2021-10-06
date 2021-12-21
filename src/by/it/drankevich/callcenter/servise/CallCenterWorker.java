@@ -37,7 +37,7 @@ public class CallCenterWorker extends Thread{
                 Client client = new Client(counter++);
                 ClientWorker clientWorker = new ClientWorker(client,callCenter);
                 clientWorker.start();
-            Timeout.sleep(100);
+            Timeout.sleep(1);
 
 
         }
